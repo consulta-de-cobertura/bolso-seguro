@@ -1,1 +1,40 @@
-Criando o branch main
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bolso Seguro + Lembretes – Diretamente em seu WhatsApp</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>Bolso Seguro + Lembretes – Diretamente em seu WhatsApp</h1>
+    <div class="form">
+        <input type="text" id="nomeItem" placeholder="Nome do item" />
+        <input type="text" id="valorItem" placeholder="Valor (R$)" />
+        <input type="number" id="qtdItem" placeholder="Quantidade" value="1" />
+        <input type="date" id="dataPagamento" />
+        <button onclick="adicionarItem()">Adicionar</button>
+    </div>
+    <table id="tabelaItens">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Valor Unit.</th>
+                <th>Qtd</th>
+                <th>Data de Pagamento</th>
+                <th>Total</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"><strong>Total Geral</strong></td>
+                <td id="totalGeral">R$ 0,00</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="scripts.js"></script>
+</body>
+</html>
